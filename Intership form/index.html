@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internship Form</title>
 </head>
+
 <body>
     <h1>Application Form</h1>
     <form>
@@ -32,80 +34,8 @@
             <label for="age">Age</label>
             <input id="age" name="age" type="number">
         </p>
-        <fieldset>
-            <legend>Preferred work arrangement</legend>
-            <label>
-                <input name="work_arrangement" type="radio" value="remote" required>
-                Remote
-            </label>
-            <label>
-                <input name="work_arrangement" type="radio" value="onsite">
-                On-site
-            </label>
-            <label>
-                <input name="work_arrangement" type="radio" value="hybrid">
-                Hybrid
-            </label>
-        </fieldset>
-        <fieldset>
-            <legend>Skills</legend>
-            <label>
-                <input name="skills" type="checkbox" value="html">
-                HTML
-            </label>
-            <label>
-                <input name="skills" type="checkbox" value="css">
-                CSS
-            </label>
-            <label>
-                <input name="skills" type="checkbox" value="javascript">
-                JavaScript
-            </label>
-        </fieldset>
-        <p>
-            <label for="availability">Availability</label>
-            <select id="availability" name="availability">
-                <option value="">Select availability</option>
-                <option value="immediate">Immediately</option>
-                <option value="two-weeks">Within two weeks</option>
-                <option value="one-month">Within one month</option>
-            </select>
-        </p>
-        <p>
-            <label for="role">Preferred role</label>
-            <input id="role" name="role" type="text" list="roles">
-            <datalist id="roles">
-                <option value="Frontend Developer">
-                <option value="Backend Developer">
-                <option value="Full-Stack Developer">
-                <option value="UI/UX Designer">
-            </datalist>
-        </p>
-        <p>
-            <label for="start-date">Available start date</label>
-            <input id="start-date" name="start_date" type="date">
-        </p>
-        <p>
-            <label for="interview-time">Preferred interview time</label>
-            <input id="interview-time" name="interview_time" type="time">
-        </p>
-        <p>
-            <label for="resume">Upload resume</label>
-            <input id="resume" name="resume" type="file" accept=".pdf,.doc,.docx">
-        </p>
-        <p>
-            <label for="hours">Hours available per week</label>
-            <input id="hours" name="hours_per_week" type="range" min="1" max="40" value="20">
-        </p>
-        <p>
-            <label for="favorite-color">Favorite color</label>
-            <input id="favorite-color" name="favorite_color" type="color" value="#336699">
-        </p>
-        <p>
-            <label for="cover-letter">Tell us about yourself</label>
-            <textarea id="cover-letter" name="cover_letter" rows="5" cols="40"></textarea>
-        </p>
         <button type="submit">Submit</button>
     </form>
 </body>
+
 </html>

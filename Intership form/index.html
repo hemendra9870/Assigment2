@@ -32,6 +32,55 @@
             <label for="age">Age</label>
             <input id="age" name="age" type="number">
         </p>
+        <fieldset>
+            <legend>Preferred work arrangement</legend>
+            <label>
+                <input name="work_arrangement" type="radio" value="remote" required>
+                Remote
+            </label>
+            <label>
+                <input name="work_arrangement" type="radio" value="onsite">
+                On-site
+            </label>
+            <label>
+                <input name="work_arrangement" type="radio" value="hybrid">
+                Hybrid
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Skills</legend>
+            <label>
+                <input name="skills" type="checkbox" value="html">
+                HTML
+            </label>
+            <label>
+                <input name="skills" type="checkbox" value="css">
+                CSS
+            </label>
+            <label>
+                <input name="skills" type="checkbox" value="javascript">
+                JavaScript
+            </label>
+        </fieldset>
+        <p>
+            <label for="availability">Availability</label>
+            <select id="availability" name="availability">
+                <option value="">Select availability</option>
+                <option value="immediate">Immediately</option>
+                <option value="two-weeks">Within two weeks</option>
+                <option value="one-month">Within one month</option>
+            </select>
+        </p>
+        <p>
+            <label for="role">Preferred role</label>
+            <input id="role" name="role" type="text" list="roles">
+            <datalist id="roles">
+                <option value="Frontend Developer">
+                <option value="Backend Developer">
+                <option value="Full-Stack Developer">
+                <option value="UI/UX Designer">
+            </datalist>
+        </p>
         <button type="submit">Submit</button>
     </form>
 </body>

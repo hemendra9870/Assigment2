@@ -1,0 +1,81 @@
+/* मुख्य डिब्बा (Container) */
+.hero {
+    position: relative;
+    /* इसके अंदर की चीजों को absolute पोजीशन देने के लिए */
+    background-color: #124e43;
+    /* बैकग्राउंड का गहरा हरा रंग */
+    height: 300px;
+    /* निश्चित ऊंचाई */
+    padding: 40px;
+    /* अंदरूनी खाली जगह (Padding) */
+    overflow: hidden;
+    /* अगर कोई चीज़ बाहर निकले तो छुप जाए */
+}
+
+/* 1. डार्क ओवरले (Dark Overlay) */
+.hero-overlay {
+    position: absolute;
+    /* पैरेंट (.hero) के पूरे हिस्से पर फैलने के लिए */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+    /* काले रंग की हल्की पारदर्शी लेयर */
+    z-index: 1;
+    /* यह लेयर सबसे नीचे रहेगी */
+}
+
+/* 2. टेक्स्ट और बटन (Hero Content) */
+.hero-content {
+    position: relative;
+    /* z-index को काम कराने के लिए position देना जरूरी है */
+    z-index: 2;
+    /* यह ओवरले (z-index: 1) के ऊपर दिखाई देगा ताकि टेक्स्ट साफ़ पढ़े */
+    color: #ffffff;
+    /* सफेद रंग का टेक्स्ट */
+}
+
+/* सब-टाइटल (छोटा टेक्स्ट) */
+.sub-title {
+    display: block;
+    /* इसे पूरी लाइन घेरने के लिए ब्लॉक बनाया */
+    font-size: 0.75rem;
+    color: #aed9cc;
+    letter-spacing: 1.5px;
+    /* अक्षरों के बीच की दूरी */
+    margin-bottom: 15px;
+    /* नीचे से मार्जिन */
+    font-weight: bold;
+}
+
+/* मुख्य हेडिंग */
+.hero h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+/* पैराग्राफ */
+.hero p {
+    font-size: 1rem;
+    color: #d1eae2;
+    margin-bottom: 25px;
+}
+
+/* बटन (Call-to-Action) */
+.btn-cta {
+    display: inline-block;
+    /* मार्जिन और पैडिंग सही से काम करे इसलिए inline-block */
+    background-color: #1a6d5d;
+    /* बटन का हरा रंग */
+    color: #ffffff;
+    text-decoration: none;
+    /* नीचे की अंडरलाइन हटाने के लिए */
+    padding: 10px 20px;
+    /* बटन के अंदर की जगह */
+    font-size: 0.85rem;
+    border-radius: 4px;
+    /* कोनों को हल्का घुमावदार बनाने के लिए */
+}

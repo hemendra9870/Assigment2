@@ -1,0 +1,56 @@
+/* Screen space centering setup */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2ecc8;
+    font-family: sans-serif;
+}
+
+/* Flexbox vertical column stack */
+.login-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h2 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #005a70;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}

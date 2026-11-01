@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internship Form</title>
+<<<<<<< HEAD
+=======
+    <link rel="stylesheet" href="style.css">
+>>>>>>> 707bd47 (placeholder , required add)
 </head>
 
 <body>
@@ -14,6 +18,7 @@
             <legend>Personal information</legend>
             <p>
                 <label for="name">Name</label>
+<<<<<<< HEAD
                 <input id="name" name="name" type="text" required>
             </p>
             <p>
@@ -35,6 +40,33 @@
             <p>
                 <label for="age">Age</label>
                 <input id="age" name="age" type="number">
+=======
+                <input id="name" name="name" type="text" placeholder="Enter your full name"
+                    minlength="2" maxlength="50" pattern="[A-Za-z][A-Za-z .'-]*" required>
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="name@example.com" required>
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" placeholder="At least 8 characters"
+                    minlength="8" maxlength="64" required>
+            </p>
+            <p>
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" placeholder="10-digit phone number"
+                    pattern="[0-9]{10}">
+            </p>
+            <p>
+                <label for="website">Website</label>
+                <input id="website" name="website" type="url" placeholder="https://example.com">
+            </p>
+            <p>
+                <label for="age">Age</label>
+                <input id="age" name="age" type="number" placeholder="Enter your age"
+                    min="16" max="65">
+>>>>>>> 707bd47 (placeholder , required add)
             </p>
         </fieldset>
         <fieldset>
@@ -71,7 +103,11 @@
             </fieldset>
             <p>
                 <label for="availability">Availability</label>
+<<<<<<< HEAD
                 <select id="availability" name="availability">
+=======
+                <select id="availability" name="availability" required>
+>>>>>>> 707bd47 (placeholder , required add)
                     <option value="">Select availability</option>
                     <option value="immediate">Immediately</option>
                     <option value="two-weeks">Within two weeks</option>
@@ -80,7 +116,12 @@
             </p>
             <p>
                 <label for="role">Preferred role</label>
+<<<<<<< HEAD
                 <input id="role" name="role" type="text" list="roles">
+=======
+                <input id="role" name="role" type="text" list="roles" placeholder="Choose or enter a role"
+                    minlength="2">
+>>>>>>> 707bd47 (placeholder , required add)
                 <datalist id="roles">
                     <option value="Frontend Developer">
                     <option value="Backend Developer">
@@ -90,7 +131,11 @@
             </p>
             <p>
                 <label for="start-date">Available start date</label>
+<<<<<<< HEAD
                 <input id="start-date" name="start_date" type="date">
+=======
+                <input id="start-date" name="start_date" type="date" required>
+>>>>>>> 707bd47 (placeholder , required add)
             </p>
             <p>
                 <label for="interview-time">Preferred interview time</label>
@@ -105,7 +150,11 @@
             <legend>Application details</legend>
             <p>
                 <label for="resume">Upload resume</label>
+<<<<<<< HEAD
                 <input id="resume" name="resume" type="file" accept=".pdf,.doc,.docx">
+=======
+                <input id="resume" name="resume" type="file" accept=".pdf,.doc,.docx" required>
+>>>>>>> 707bd47 (placeholder , required add)
             </p>
             <p>
                 <label for="favorite-color">Favorite color</label>
@@ -113,7 +162,12 @@
             </p>
             <p>
                 <label for="cover-letter">Tell us about yourself</label>
+<<<<<<< HEAD
                 <textarea id="cover-letter" name="cover_letter" rows="5" cols="40"></textarea>
+=======
+                <textarea id="cover-letter" name="cover_letter" rows="5" cols="40"
+                    placeholder="Describe your skills and interests..." minlength="20" required></textarea>
+>>>>>>> 707bd47 (placeholder , required add)
             </p>
         </fieldset>
         <button type="submit">Submit</button>

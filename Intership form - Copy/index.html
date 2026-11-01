@@ -1,0 +1,285 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Form</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+    <h1>Application Form</h1>
+    <p> student Intership application. * Required</p>
+    <form>
+        <fieldset>
+            <legend id="personal-info">Personal information</legend>
+            <p>
+                <label for="name">Name *</label>
+                <input id="name" name="name" type="text" placeholder="Enter your full name"
+                    minlength="2" maxlength="50" pattern="[A-Za-z][A-Za-z .'-]*" required>
+            </p>
+            <p>
+                <label for="email">Email*</label>
+                <input id="email" name="email" type="email" placeholder="name@example.com" required>
+            </p>
+            <p>
+                <label for="password">Password *</label>
+                <input id="password" name="password" type="password" placeholder="At least 8 characters"
+                    minlength="8" maxlength="64" required>
+            </p>
+            <p>
+                <label for="phone">Phone *</label>
+                <input id="phone" name="phone" type="tel" placeholder="10-digit phone number"
+                    pattern="[0-9]{10}">
+            </p>
+            <p>
+                <label for="website">Website *</label>
+                <input id="website" name="website" type="url" placeholder="https://example.com">
+            </p>
+            <p>
+                <label for="age">Age *</label>
+                <input id="age" name="age" type="number" placeholder="Enter your age"
+                    min="17" max="65">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Education and Skills</legend>
+            <p>
+                <label for="education">Highest education level </label>
+                <select id="education" name="education" required>
+                    <option value="">Select education level *</option>
+                    <option value="high-school">High school</option>
+                    <option value="diploma">Diploma</option>
+                    <option value="bachelors">Bachelor's degree</option>
+                    <option value="masters">Master's degree</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+            <fieldset>
+                <legend>Skills</legend>
+                <label>
+                    <input name="skills" type="checkbox" value="html">
+                    HTML
+                </label>
+                <label>
+                    <input name="skills" type="checkbox" value="css">
+                    CSS
+                </label>
+                <label>
+                    <input name="skills" type="checkbox" value="javascript">
+                    JavaScript
+                </label>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>Application details</legend>
+            <p>
+                <label for="resume">Upload resume *</label>
+                <input id="resume" name="resume" type="file" accept=".pdf,.doc,.docx" required>
+            </p>
+            <p>
+                <label for="stipend">Expected monthly stipend: $100</label>
+                <input id="stipend" name="expected_monthly_stipend" type="range" min="1000" max="50000"
+                    aria-describedby="stipend-help">
+                
+                <small id="stipend-help">Move the slider to select your expected monthly stipend.</small>
+            </p>
+            <p>
+                <label for="favorite-color">Favorite color</label>
+                <input id="favorite-color" name="favorite_color" type="color" value="#336699">
+            </p>
+            <p>
+                <label for="cover-letter">Tell us about yourself</label>
+                <textarea id="cover-letter" name="cover_letter" rows="5" cols="40"
+                    placeholder="Describe your skills and interests..." minlength="20" required></textarea>
+            </p>
+        </fieldset>
+        <button type="submit">Submit</button>
+       <button type="reset">Reset</button>
+    </form>
+    </div>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Form</title>
+<<<<<<< HEAD
+=======
+    <link rel="stylesheet" href="style.css">
+>>>>>>> 707bd47 (placeholder , required add)
+</head>
+
+<body>
+    <h1>Application Form</h1>
+    <form>
+        <fieldset>
+            <legend>Personal information</legend>
+            <p>
+                <label for="name">Name</label>
+<<<<<<< HEAD
+                <input id="name" name="name" type="text" required>
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required>
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" required>
+            </p>
+            <p>
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel">
+            </p>
+            <p>
+                <label for="website">Website</label>
+                <input id="website" name="website" type="url">
+            </p>
+            <p>
+                <label for="age">Age</label>
+                <input id="age" name="age" type="number">
+=======
+                <input id="name" name="name" type="text" placeholder="Enter your full name"
+                    minlength="2" maxlength="50" pattern="[A-Za-z][A-Za-z .'-]*" required>
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="name@example.com" required>
+            </p>
+            <p>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" placeholder="At least 8 characters"
+                    minlength="8" maxlength="64" required>
+            </p>
+            <p>
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" placeholder="10-digit phone number"
+                    pattern="[0-9]{10}">
+            </p>
+            <p>
+                <label for="website">Website</label>
+                <input id="website" name="website" type="url" placeholder="https://example.com">
+            </p>
+            <p>
+                <label for="age">Age</label>
+                <input id="age" name="age" type="number" placeholder="Enter your age"
+                    min="16" max="65">
+>>>>>>> 707bd47 (placeholder , required add)
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Internship preferences</legend>
+            <fieldset>
+                <legend>Preferred work arrangement</legend>
+                <label>
+                    <input name="work_arrangement" type="radio" value="remote" required>
+                    Remote
+                </label>
+                <label>
+                    <input name="work_arrangement" type="radio" value="onsite">
+                    On-site
+                </label>
+                <label>
+                    <input name="work_arrangement" type="radio" value="hybrid">
+                    Hybrid
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Skills</legend>
+                <label>
+                    <input name="skills" type="checkbox" value="html">
+                    HTML
+                </label>
+                <label>
+                    <input name="skills" type="checkbox" value="css">
+                    CSS
+                </label>
+                <label>
+                    <input name="skills" type="checkbox" value="javascript">
+                    JavaScript
+                </label>
+            </fieldset>
+            <p>
+                <label for="availability">Availability</label>
+<<<<<<< HEAD
+                <select id="availability" name="availability">
+=======
+                <select id="availability" name="availability" required>
+>>>>>>> 707bd47 (placeholder , required add)
+                    <option value="">Select availability</option>
+                    <option value="immediate">Immediately</option>
+                    <option value="two-weeks">Within two weeks</option>
+                    <option value="one-month">Within one month</option>
+                </select>
+            </p>
+            <p>
+                <label for="role">Preferred role</label>
+<<<<<<< HEAD
+                <input id="role" name="role" type="text" list="roles">
+=======
+                <input id="role" name="role" type="text" list="roles" placeholder="Choose or enter a role"
+                    minlength="2">
+>>>>>>> 707bd47 (placeholder , required add)
+                <datalist id="roles">
+                    <option value="Frontend Developer">
+                    <option value="Backend Developer">
+                    <option value="Full-Stack Developer">
+                    <option value="UI/UX Designer">
+                </datalist>
+            </p>
+            <p>
+                <label for="start-date">Available start date</label>
+<<<<<<< HEAD
+                <input id="start-date" name="start_date" type="date">
+=======
+                <input id="start-date" name="start_date" type="date" required>
+>>>>>>> 707bd47 (placeholder , required add)
+            </p>
+            <p>
+                <label for="interview-time">Preferred interview time</label>
+                <input id="interview-time" name="interview_time" type="time">
+            </p>
+            <p>
+                <label for="hours">Hours available per week</label>
+                <input id="hours" name="hours_per_week" type="range" min="1" max="40" value="20">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Application details</legend>
+            <p>
+                <label for="resume">Upload resume</label>
+<<<<<<< HEAD
+                <input id="resume" name="resume" type="file" accept=".pdf,.doc,.docx">
+=======
+                <input id="resume" name="resume" type="file" accept=".pdf,.doc,.docx" required>
+>>>>>>> 707bd47 (placeholder , required add)
+            </p>
+            <p>
+                <label for="favorite-color">Favorite color</label>
+                <input id="favorite-color" name="favorite_color" type="color" value="#336699">
+            </p>
+            <p>
+                <label for="cover-letter">Tell us about yourself</label>
+<<<<<<< HEAD
+                <textarea id="cover-letter" name="cover_letter" rows="5" cols="40"></textarea>
+=======
+                <textarea id="cover-letter" name="cover_letter" rows="5" cols="40"
+                    placeholder="Describe your skills and interests..." minlength="20" required></textarea>
+>>>>>>> 707bd47 (placeholder , required add)
+            </p>
+        </fieldset>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+>>>>>>> fa13d0b (placeholder, required update)
+</html>

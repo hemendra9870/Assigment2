@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f0f4f8;
+    padding: 20px;
+}
+
+
+.navbar {
+    background-color: #00334e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    color: white;
+}
+
+.logo {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}

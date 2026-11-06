@@ -5,71 +5,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaf & Bean - Cafe Website</title>
+
+    <title>HEMENDRA & SINGH TEA STALL</title>
+
+    <!-- CSS LINK -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Header -->
+    <!-- HEADER -->
     <header class="navbar">
+
         <div class="logo">LEAF & BEAN</div>
 
         <nav class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
         </nav>
+
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
 
         <div class="hero-content">
-            <span class="sub-title">YOUR NEIGHBOURHOOD CAFE</span>
 
-            <h1>Good coffee.<br>
-                A little room to pause.</h1>
+            <span class="sub-title">
+                YOUR NEIGHBOURHOOD CAFE
+            </span>
+
+            <h1>
+                Good coffee.<br>
+                A little room to pause.
+            </h1>
 
             <p>Fresh brews and warm bites.</p>
 
-            <a href="#" class="btn-cta">Visit us</a>
+            <a href="#contact" class="btn-cta">
+                Visit us
+            </a>
+
         </div>
+
     </section>
 
-    <!-- Favourites -->
-    <section class="favorites">
+    <!-- FAVOURITES -->
+    <section class="favorites" id="services">
 
         <h2>Our favourites</h2>
 
         <div class="card-container">
 
             <div class="card card-1">
+
                 <h3>Fresh brews</h3>
+
                 <p>Coffee, made your way.</p>
+
             </div>
 
             <div class="card card-2">
+
                 <h3>Warm bites</h3>
+
                 <p>Sandwiches and treats.</p>
+
             </div>
 
             <div class="card card-3">
+
                 <h3>Study corner</h3>
+
                 <p>Space for your ideas.</p>
+
             </div>
 
         </div>
+
     </section>
 
-    <!-- Gallery -->
-    <section class="gallery">
+    <!-- GALLERY -->
+    <section class="gallery" id="about">
 
-        <div class="landscape-placeholder"></div>
+        <div class="landscape-placeholder">
+
+            <div class="sun"></div>
+
+            <div class="mountain"></div>
+
+        </div>
 
         <div class="testimonial">
+
             <p class="quote">
                 "A lovely place for a study break."
             </p>
@@ -77,33 +107,53 @@
             <p class="address">
                 12 College Road, Bareilly
             </p>
+
         </div>
 
     </section>
 
-    <!-- Contact -->
-    <section class="contact">
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
 
         <h2>Come say hello</h2>
 
-        <form class="contact-form" onsubmit="event.preventDefault();">
+        <form class="contact-form"
+            onsubmit="event.preventDefault(); alert('Message submitted!');">
 
             <div class="form-group">
+
                 <label for="name">Your name</label>
-                <input type="text" id="name"
-                    placeholder="Hemendra Singh">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required>
+
             </div>
 
             <div class="form-group">
+
                 <label for="email">Email</label>
-                <input type="email" id="email"
-                    placeholder="hemendra@example.com">
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required>
+
             </div>
 
             <div class="form-group">
+
                 <label for="message">Message</label>
-                <textarea id="message" rows="3"
-                    placeholder="I would like to ask about your study corner."></textarea>
+
+                <textarea
+                    id="message"
+                    rows="4"
+                    placeholder="Write your message"
+                    required></textarea>
+
             </div>
 
             <button type="submit" class="btn-submit">
@@ -111,20 +161,23 @@
             </button>
 
         </form>
+
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="footer">
 
         <div class="footer-logo">
-            &copy; 2026 Hemendra Singh
+            &copy; 2026 HEMENDRA & SINGH
         </div>
 
         <nav class="footer-links">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+
         </nav>
 
     </footer>

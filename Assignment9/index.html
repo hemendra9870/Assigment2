@@ -1,105 +1,252 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Store</title>
+
+    <meta name="description" content="ShopNow - Discover quality products at affordable prices.">
+    <meta name="keywords" content="online shopping, products, electronics, fashion">
+    <meta name="author" content="ShopNow">
+
+    <title>ShopNow | Online Shopping Store</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Header -->
+    <!-- HEADER -->
     <header class="header">
-        <div class="logo">Shop<span>Now</span></div>
 
+        <div class="logo">
+            HSINGH <span>NUW</span>
+        </div>
+
+        <!-- NAVBAR -->
         <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="#">Categories</a>
-            <a href="#">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#products">Products</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
         </nav>
 
-        <div class="header-icons">
-            <button>Search</button>
-            <button>Cart (0)</button>
+        <!-- HEADER BUTTONS -->
+        <div class="header-buttons">
+            <button class="login-btn">Login</button>
+            <button class="cart-btn">Cart (0)</button>
         </div>
+
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <p class="subtitle">WELCOME TO SHOPNOW</p>
-            <h1>Discover Your Favourite Products</h1>
-            <p>Explore our latest collection and find products you love.</p>
-            <button class="shop-btn">Shop Now</button>
-        </div>
-    </section>
 
-    <!-- Products Section -->
-    <main class="products-section">
+    <!-- MAIN PAGE -->
+    <main>
 
-        <div class="section-heading">
-            <h2>Featured Products</h2>
-            <p>Explore our popular collection</p>
-        </div>
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
 
-        <div class="product-grid">
+            <div class="hero-content">
 
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="Headphones">
+                <p class="tagline">WELCOME TO HSINGH NUW</p>
+
+                <h1>Discover Your Favourite Products</h1>
+
+                <p>
+                    Explore our latest collection of quality products
+                    at affordable prices.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#products" class="primary-btn">Shop Now</a>
+                    <a href="#features" class="secondary-btn">Explore More</a>
                 </div>
-                <div class="product-info">
-                    <h3>Wireless Headphones</h3>
-                    <p>Premium sound quality</p>
-                    <div class="price">₹1,999</div>
-                    <button>Add to Cart</button>
-                </div>
+
             </div>
 
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500" alt="Watch">
-                </div>
-                <div class="product-info">
-                    <h3>Smart Watch</h3>
-                    <p>Modern smart technology</p>
-                    <div class="price">₹2,499</div>
-                    <button>Add to Cart</button>
-                </div>
+        </section>
+
+
+        <!-- FEATURES SECTION -->
+        <section class="features section" id="features">
+
+            <div class="section-heading">
+                <h2>Why Choose Us?</h2>
+                <p>We make shopping simple and convenient.</p>
             </div>
 
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="Audio headphones">
-                </div>
-                <div class="product-info">
-                    <h3>Premium Headset</h3>
-                    <p>Comfortable and stylish</p>
-                    <div class="price">₹1,499</div>
-                    <button>Add to Cart</button>
-                </div>
+            <div class="features-grid">
+
+                <article class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Fast Delivery</h3>
+                    <p>Get your products delivered to your doorstep.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">💳</div>
+                    <h3>Secure Payment</h3>
+                    <p>Enjoy a safe and convenient payment experience.</p>
+                </article>
+
+                <article class="feature-card">
+                    <div class="feature-icon">⭐</div>
+                    <h3>Best Quality</h3>
+                    <p>Discover quality products for everyday use.</p>
+                </article>
+
             </div>
 
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="Shoes">
-                </div>
-                <div class="product-info">
-                    <h3>Running Shoes</h3>
-                    <p>Perfect for everyday use</p>
-                    <div class="price">₹2,999</div>
-                    <button>Add to Cart</button>
-                </div>
+        </section>
+
+
+        <!-- PRODUCT GALLERY -->
+        <section class="products section" id="products">
+
+            <div class="section-heading">
+                <h2>Featured Products</h2>
+                <p>Explore our popular collection.</p>
             </div>
 
-        </div>
+            <div class="product-grid">
+
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500"
+                            alt="Black wireless over-ear headphones"
+                        >
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Wireless Headphones</h3>
+                        <p>Premium sound quality</p>
+                        <span class="price">₹1,999</span>
+                        <button class="add-btn">Add to Cart</button>
+                    </div>
+
+                </article>
+
+
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500"
+                            alt="Modern wristwatch with a light dial"
+                        >
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Smart Watch</h3>
+                        <p>Modern smart technology</p>
+                        <span class="price">₹2,499</span>
+                        <button class="add-btn">Add to Cart</button>
+                    </div>
+
+                </article>
+
+
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500"
+                            alt="Red athletic running shoe"
+                        >
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Running Shoes</h3>
+                        <p>Comfortable everyday shoes</p>
+                        <span class="price">₹2,999</span>
+                        <button class="add-btn">Add to Cart</button>
+                    </div>
+
+                </article>
+
+
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500"
+                            alt="Vintage digital camera"
+                        >
+                    </div>
+
+                    <div class="product-info">
+                        <h3>Digital Camera</h3>
+                        <p>Capture your best moments</p>
+                        <span class="price">₹4,999</span>
+                        <button class="add-btn">Add to Cart</button>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- GALLERY SECTION -->
+        <section class="gallery section" id="gallery">
+
+            <div class="section-heading">
+                <h2>Our Gallery</h2>
+                <p>Discover more from our collection.</p>
+            </div>
+
+            <div class="gallery-grid">
+
+                <img
+                    src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600"
+                    alt="Stylish wristwatch product"
+                >
+
+                <img
+                    src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600"
+                    alt="Wireless headphones product"
+                >
+
+                <img
+                    src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600"
+                    alt="Red sports shoes"
+                >
+
+            </div>
+
+        </section>
+
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>© 2026 ShopNow. All Rights Reserved.</p>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <h2>HSINGH<span> NUW</span></h2>
+                <p>Your destination for quality products.</p>
+            </div>
+
+            <nav class="footer-links" aria-label="Footer navigation">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#products">Products</a>
+                <a href="#gallery">Gallery</a>
+            </nav>
+
+        </div>
+
+        <div class="copyright">
+            <p>© 2026 HSINGH NUW. All Rights Reserved.</p>
+        </div>
+
     </footer>
 
 </body>
